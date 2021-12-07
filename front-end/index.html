@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>ExpressBookstore</title>
+</head>
+
+<body>
+
+    <h1>Welcome to the Express Bookstore</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <h2>Search</h2>
+
+                <form id="search-form">
+                    <div class="form-group">
+                        <input type="text" id="isbn" class="form-control" placeholder="ISBN">
+                    </div>
+                    <button id="search-button" class="btn btn-primary">Search by ISBN</button>
+                </form>
+                <h3>Or:</h3>
+                <form id="all-books-form">
+                    <button type="submit" class="btn btn-success">Get All Books</button>
+                </form>
+            </div>
+
+            <div class="col-3">
+                <h2>New Book</h2>
+                <form id="new-book-form">
+                    <div class="form-group">
+                        <input type="text" id="new-isbn" class="form-control" placeholder="isbn">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="amazon-url" class="form-control" placeholder="Amazon URL">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="author" class="form-control" placeholder="Author">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="language" class="form-control" placeholder="Language">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="num-pages" class="form-control" placeholder="# of Pages">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="publisher" class="form-control" placeholder="Publisher">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="title" class="form-control" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="year" class="form-control" placeholder="Year">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add New Book</button>
+                </form>
+            </div>
+
+            <div class="col-3">
+                <h2>Update Book</h2>
+                <form id="update-book-form">
+                    <div class="form-group">
+                        <input type="text" id="update-isbn" class="form-control" placeholder="isbn">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="update-amazon-url" class="form-control" placeholder="Amazon URL">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="update-author" class="form-control" placeholder="Author">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="update-language" class="form-control" placeholder="Language">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="update-num-pages" class="form-control" placeholder="# of Pages">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="update-publisher" class="form-control" placeholder="Publisher">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="update-title" class="form-control" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="update-year" class="form-control" placeholder="Year">
+                    </div>
+                    <button type="submit" class="btn btn-info">Update Book</button>
+                </form>
+            </div>
+
+            <div class="col-3">
+
+                <form id="delete-form">
+                    <h2>Delete Books</h2>
+                    <div class="form-group">
+                        <input type="text" id="delete-isbn" class="form-control" placeholder="Delete">
+                    </div>
+                    <button id="delete-button" class="btn btn-danger">Delete by ISBN</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="row">
+                <div class="col align-self-center">
+                    <div id="all-book-results">
+                        <ul id="books">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://unpkg.com/jquery"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="bookstore.js"></script>
+
+</body>
+
+</html>
